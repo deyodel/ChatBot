@@ -1,7 +1,9 @@
+import os
+
 from flask import Flask, render_template, request, jsonify
 import requests
 
-RASA_API_URL = 'http://localhost:5005/webhooks/rest/webhook'
+RASA_API_URL = 'http://0.0.0.0:5005/webhooks/rest/webhook'
 app = Flask(__name__)
 
 @app.route('/')
@@ -24,4 +26,4 @@ def webhook():
     return jsonify({'response': bot_response})
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
