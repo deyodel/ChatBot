@@ -1,5 +1,3 @@
-import os
-
 from flask import Flask, render_template, request, jsonify
 import requests
 
@@ -26,4 +24,4 @@ def webhook():
     return jsonify({'response': bot_response})
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
+    app.run(host='0.0.0.0', port=8080)
