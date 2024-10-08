@@ -1,0 +1,78 @@
+version: "3.1"
+
+intents:
+  - greet
+  - greet2
+  - goodbye
+  - thank
+  - inquire_product
+  - inform_product
+  - inquire_pricing
+  - inform_pricing
+  - request_demo
+  - affirmative_demo
+  - negative_demo
+  - ask_bot_name
+
+entities:
+  - product
+  - pricing_tier
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+    - text: "Hi! How can I assist you today?"
+    - text: "Hello! What can I do for you today?"
+    - text: "Hey there! How can I help?"
+    - text: "Greetings! How may I be of service?"
+
+  utter_greet2:
+    - text: "I'm doing great, thank you for asking! How can I assist you today?"
+    - text: "All systems are running smoothly, thank you for checking in. How may I help you today?"
+    - text: "Thanks for asking! I'm all set to help you with whatever you need."
+    - text: "I’m well, thank you! Let me know how I can assist you today."
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Goodbye! Have a great day."
+  - text: "See you later! Take care."
+  - text: "Bye! Looking forward to our next conversation."
+  - text: "Goodbye! Don’t hesitate to reach out again."
+
+  utter_thank:
+    - text: "You're welcome!"
+    - text: "My pleasure!"
+    - text: "I'm happy to help!"
+    - text: "Glad I could assist!"
+    - text: "You're welcome! Happy to help."
+    - text: "My pleasure! Let me know if you need anything else."
+
+  utter_inquire_product:
+    - text: "We offer Email marketing, CRM systems, product management software and SEO services. Which would you like to check out?"
+
+  utter_request_demo:
+    - text: "Sure, your demo has been successfully created! Please check your registered email for the details."
+    - text: "Absolutely! Your demo has been scheduled. Kindly check your registered email for the confirmation and details."
+    - text: "I'm pleased to inform you that your demo has been successfully arranged! Please check your email for all the details."
+    - text: "Your demo is all set! Please look for an email with the details sent to your registered address."
+
+  utter_ask_bot_name:
+    - text: "My name is NudgeBot! How can I assist you today?"
+    - text: "I’m called NudgeBot. How can I help you?"
+    - text: "You can call me NudgeBot! What can I do for you?"
+    - text: "I go by NudgeBot. What would you like to know?"
+    - text: "I’m NudgeBot, your assistant! How may I assist you today?"
+    - text: "The name's NudgeBot! How can I be of service?"
+    - text: "I’m NudgeBot, here to help you with any questions!"
+
+actions:
+  - action_extract_product_entity
+  - action_order_product
+  - action_confirm_order
+  - action_provide_pricing_info
+  - action_pricing_plan
+  - action_offer_demo
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,176 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - wagwan
+    - whats up
+
+- intent: greet2
+  examples: |
+    - How are you?
+    - how are you doing?
+    - What's up with you today?
+    - How have you been?
+    - How's it going with you?
+    - How are things on your end?
+    - How are things going?
+    - Are you doing well today?
+    - How's your day been so far?
+    - How are you feeling today?
+    - How's everything on your side?
+    
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: thank
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it
+    - many thanks
+    - thank
+
+- intent: inquire_product
+  examples: |
+    - What services do you offer?
+    - Can you tell me what services you provide?
+    - What kind of products or services do you have?
+    - I'm interested in learning more about what you offer.
+    - What do you sell here?
+    - What services can I get from you?
+    - Could you explain the services available?
+    - What kind of help can I get from your company?
+    - What are the different services you guys provide?
+    - What can I buy or subscribe to here?
+    - I'd like to know about your services.
+    - Could you share some details about the products you offer?
+    - What kinds of services are you offering right now?
+    - What do you specialize in?
+    - Tell me about your services.
+    - Can you explain what services you offer for customers like me?
+    - What are your main services?
+    - Services?
+    
+
+- intent: inform_product
+  examples: |
+    - [Email marketing](product)
+    - [SEO services](product)
+    - [CRM software](product)
+    - [Product management services](product)
+
+- intent: inquire_pricing
+  examples: |
+    - What are the pricing options?
+    - Can you tell me about your pricing plans?
+    - How much does this cost?
+    - What are your pricing tiers?
+    - Could you explain the pricing structure?
+    - What is the cost of your services?
+    - What are the different pricing packages available?
+    - Can you share details about your pricing?
+    - How much do your products or services cost?
+    - I'd like to know about your pricing.
+    - What kind of pricing options do you offer?
+    - Can you provide some information on your pricing?
+    - What are the prices for your services?
+    - How much should I expect to pay?
+    - What are your rates?
+    - What is the price range for your services?
+    - Can you give me an idea of your pricing structure?
+    - What are the costs involved in using your services?
+    - Pricing?
+
+- intent: inform_pricing
+  examples: |
+    - [Basic](pricing_tier)
+    - [Pro](pricing_tier)
+    - [Enterprise](pricing_tier)
+
+- intent: request_demo
+  examples: |
+    - I'd like to schedule a demo.
+    - Can I book a demo with a sales representative?
+    - How can I get a product demonstration?
+    - Schedule a demo for me.
+    - Can I schedule a demo for the [CRM system](product)?
+    - I’d like to see a demo of your [email marketing tool](product)
+    - How do I book a demo for your [SEO services](product)?
+    - How can I start a free trial of your [Pro](pricing_tier) package?
+
+- intent: affirmative_demo
+  examples: |
+    - Yes, I would like to schedule a demo.
+    - Sure, let’s set up a demo.
+    - Absolutely, I want a demo.
+    - Sounds great, let’s do a demo.
+    - I'm interested in a demo.
+    - Yes, please arrange a demo.
+    - yes
+    - yep
+    - yup
+    - yh
+    - sure
+    - absolutely
+    - sounds great
+
+- intent: negative_demo
+  examples: |
+    - No, I’m not interested in a demo.
+    - No, thank you.
+    - I’ll pass on the demo.
+    - Not right now.
+    - I don’t want a demo.
+    - Maybe later.
+    - nope
+    - no
+    - nah
+    - na
+    - not really
+
+- intent: ask_bot_name
+  examples: |
+    - What is your name?
+    - Can you tell me your name?
+    - What's your bot name?
+    - May I know your name?
+    - What's your name, bot?
+    - Do you have a name?
+    - Could you share your name with me?
+    - What should I call you?
+    - Who are you?
+    - What are you called?
+    - Tell me your name.
+    - What's your name?
+    - What do people call you?
+    - How should I address you?
+    - What's your official name?
+    - Do you have a specific name?
+    - What should I refer to you as?
+    - Can you introduce yourself?
+    - What's your chatbot name?

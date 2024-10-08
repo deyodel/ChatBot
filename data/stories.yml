@@ -1,0 +1,46 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: happy path2
+  steps:
+    - intent: greet2
+    - action: utter_greet2
+
+- story: Express thanks
+  steps:
+    - intent: thank
+    - action: utter_thank
+
+- story: Inquire Product
+  steps:
+    - intent: inquire_product
+    - action: action_order_product
+    - intent: inform_product
+    - action: action_confirm_order
+
+- story: Inquire Pricing
+  steps:
+  - intent: inquire_pricing
+  - action: action_pricing_plan
+  - intent: inform_pricing
+  - action: action_provide_pricing_info
+  - intent: affirmative_demo  # User indicates they want a demo
+  - action: action_offer_demo
+  - intent: negative_demo  # User declines the demo
+  - action: action_offer_demo
+
+- story: Request Demo
+  steps:
+    - intent: request_demo
+    - action: utter_request_demo
+
+- story: Ask Bot Name
+  steps:
+    - intent: ask_bot_name
+    - action: utter_ask_bot_name
