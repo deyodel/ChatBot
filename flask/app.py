@@ -3,7 +3,7 @@ import os
 from flask import Flask, render_template, request, jsonify
 import requests
 
-RASA_API_URL = 'http://0.0.0.0:5005/webhooks/rest/webhook'
+RASA_API_URL = 'https://rasa-service.onrender.com/webhooks/rest/webhook'
 app = Flask(__name__)
 
 @app.route('/')
